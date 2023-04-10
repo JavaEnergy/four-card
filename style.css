@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 85px 32px 78px 32px;
+  background-color: #fafafa;
+  font-family: "Poppins";
+  color: #4d4f62;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-weight: 400;
+  opacity: 50%;
+  line-height: 23px;
+}
+header {
+  text-align: center;
+  margin-bottom: 76px;
+}
+.first-h {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+.second-h {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+header p {
+  font-size: 15px;
+}
+
+.box {
+  display: grid;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 311px;
+  padding-bottom: 125px;
+  /* height: 222px; */
+  border-radius: 8px;
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
+
+  background-color: #ffffff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 27px;
+  padding-left: 28px;
+}
+
+.card p {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-left: 29px;
+}
+.card {
+  position: relative;
+}
+.card img {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  bottom: 5%;
+  right: 5%;
+  /* margin-left: 224px;
+  margin-top: 35px; */
+}
+.supervisor {
+  border-top: 3.55px solid #44d3d2;
+}
+.team {
+  border-top: 3.55px solid #ea5454;
+}
+.karma {
+  border-top: 3.55px solid #fcae4a;
+}
+.calculator {
+  border-top: 3.55px solid #549ef2;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    max-width: 540px;
+  }
+
+  .box {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 64px;
+  }
+
+  .supervisor {
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .karma {
+    grid-column: 2 / 3;
+  }
+
+  .calculator {
+    justify-content: center;
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: -1;
+  }
+}
